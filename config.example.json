@@ -14,6 +14,8 @@
   "MINECRAFT_TELLRAW_TEMPLATE": "[{\"color\": \"white\", \"text\": \"<@%username%> %message%\"}]",
   "MINECRAFT_TELLRAW_DOESNT_EXIST": false,
   "MINECRAFT_TELLRAW_DOESNT_EXIST_SAY_TEMPLATE": "<%username%> %message%",
+  "MINECRAFT_SERVER_ONLINE": ":white_check_mark: Server is online",
+  "MINECRAFT_SERVER_OFFLINE": ":octagonal_sign: Server is offline",
 
   "IS_LOCAL_FILE": true,
   "LOCAL_FILE_PATH": "/usr/home/minecraft_server/logs/latest.log",
