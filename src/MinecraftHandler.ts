@@ -90,12 +90,12 @@ class MinecraftHandler {
         if (this.config.DEBUG) {
           console.log('[DEBUG] Server has started')
         }
-        return { username: serverUsername, message: 'Server is online' }
+        return { username: serverUsername, message: this.config.MINECRAFT_SERVER_ONLINE }
     } else if (this.config.SHOW_SERVER_STATUS && (logLine.includes('Stopping the server'))) {
         if (this.config.DEBUG) {
           console.log('[DEBUG] Server has stopped')
         }
-        return { username: serverUsername, message: 'Server is offline' }
+        return { username: serverUsername, message: this.config.MINECRAFT_SERVER_OFFLINE }
     } else if (this.config.SHOW_PLAYER_ADVANCEMENT && logLine.includes('made the advancement')) {
       // handle advancements
       if (this.config.DEBUG){
